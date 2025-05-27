@@ -1,0 +1,14 @@
+{
+  "name": "shared-components",
+  "private": true,
+  "version": "1.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "clean": "rm -rf packages/**/dist"
+  },
+  "peerDependencies": {},
+  "devDependencies": {}
+}
