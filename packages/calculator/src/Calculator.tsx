@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 type Operator = "+" | "-" | "X" | "/" | null;
 
 const Calculator: React.FC = () => {
@@ -80,22 +79,20 @@ const Calculator: React.FC = () => {
   ];
 
   return (
-    <div className="bg-black rounded-xl p-4 w-[340px]">
-      <div className="text-white text-4xl text-right mb-4 overflow-auto">
-        {current}
-      </div>
-      <div className="grid grid-cols-4 gap-2">
+    <div className="calculator">
+      <div className="display">{current}</div>
+      <div className="buttons-grid">
         {buttons.map(({ label, onClick, span }, idx) => (
           <button
             key={idx}
             onClick={onClick}
-            className={`rounded-full text-white text-xl h-14 ${
+            className={`button ${
               ["+", "-", "X", "/", "="].includes(label)
-                ? "bg-orange-500"
+                ? "button-orange"
                 : label === "AC" || label === "+/-" || label === "%"
-                ? "bg-gray-400"
-                : "bg-gray-700"
-            } ${span ? "col-span-2" : ""}`}
+                ? "button-gray-light"
+                : "button-gray-dark"
+            } ${span ? "span-two" : ""}`}
           >
             {label}
           </button>

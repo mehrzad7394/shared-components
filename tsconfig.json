@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "react-jsx", // or "react" for React <17
+   "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "declarationMap": false,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "outDir": "dist",
-    "baseUrl": "."
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true
   },
   "exclude": ["node_modules", "dist"],
-  "references": [
-    { "path": "./packages/calculator" },
-    
-  ]
+  "include": ["packages"]
 }

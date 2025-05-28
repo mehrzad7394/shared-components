@@ -1,0 +1,61 @@
+// styles.scss
+
+$orange-500: #f97316;
+$gray-400: #9ca3af;
+$gray-700: #374151;
+
+.calculator {
+  background-color: black;
+  border-radius: 1rem; // 16px
+  padding: 1rem; // 16px
+  width: 340px;
+  box-sizing: border-box;
+}
+
+.display {
+  color: white;
+  font-size: 2.5rem; // approx text-4xl
+  text-align: right;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem; // 8px
+}
+
+.button {
+  border-radius: 9999px; // rounded-full
+  color: white;
+  font-size: 1.25rem; // text-xl
+  height: 3.5rem; // 56px
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.button-orange {
+  background-color: $orange-500;
+}
+
+.button-gray-light {
+  background-color: $gray-400;
+  color: black;
+}
+
+.button-gray-dark {
+  background-color: $gray-700;
+}
+
+.span-two {
+  grid-column: span 2;
+}

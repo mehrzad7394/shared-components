@@ -9,6 +9,7 @@
     "build": "pnpm -r build",
     "clean": "rm -rf packages/**/dist"
   },
-  "peerDependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
 }
