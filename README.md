@@ -8,6 +8,9 @@ A growing collection of reusable React components packaged as separate NPM modul
 
 A minimal, responsive calculator component built with React.
 
+#### Screenshot
+
+![Calculator Screenshot](./assets/Screenshot-calculator.png) 
 #### Install
 
 ```bash
