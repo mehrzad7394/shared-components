@@ -5,7 +5,7 @@ A lightweight, reusable calculator React component built with TypeScript and SCS
 
 #### Screenshot
 
-![Calculator Screenshot](https://raw.githubusercontent.com/mehrzad7394/shared-components/tree/main/packages/calculator/assets/Screenshot-calculator.png) 
+![Calculator Screenshot](https://raw.githubusercontent.com/mehrzad7394/shared-components/main/assets/Screenshot-calculator.png) 
 
 ## 📦 Installation
 
