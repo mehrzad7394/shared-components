@@ -1,13 +1,16 @@
 {
   "name": "@mehrzad-ui/calculator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "private": false,
   "publishConfig": {
     "access": "public"
   },
-   "files": ["dist", "styles.css"],
+  "files": [
+    "dist",
+    "styles.css"
+  ],
   "scripts": {
     "build:ts": "tsc --project tsconfig.json",
     "build:css": "sass src/styles.scss dist/styles.css",
@@ -20,5 +23,14 @@
     "@types/react-dom": "^18.1.0",
     "typescript": "^5.8.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "license": "MIT",
+  "homepage": "https://github.com/mehrzad7394/shared-components/tree/main/packages/calculator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehrzad7394/shared-components/tree/main/packages/calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehrzad7394/shared-components/issues"
+  }
 }
